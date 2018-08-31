@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mes bloc</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="../css/head.css">
+<link href="../css/style1.css" rel="alternate stylesheet" type="text/css" title="style1">
+<link href="../css/style2.css" rel="alternate stylesheet" type="text/css" title="style2">
+ <script src="../script/monscript.js"></script>
+</head>
+
+<body>
+
+
+<div id="contenu">
+<header>
+  <div id="titre">
+    <h1>Header</h1>
+  </div>
+
+  <div id="connection">
+    <form>
+      <input class="yo" type="text" name="login" placeholder="Login">
+      <input class="yo" type="text" name="password" placeholder="Mot de pass">
+      <button  class="ro" type="submit" name="button"  onclick="ma_fonction()" >Connection</button> 
+
+    </form>
+  </div>
+</header>
+</div>
+
+
+
+
+<div id="conteneur">
+
+<section style="width: 100%;height: auto;">
+  <h6>up</h6>
+  <nav style="height: 627px;">
+    Navigation
+    <ul>
+      
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="insert.html">l'insert</a></li>
+      <li><a href="tableau.html">tableau</a></li>
+      <li><a href="formulaire.html">formulaire</a></li>
+      <li><a href="video.html">video</a></li>
+      <li><a href="bloc.html">les blocs</a></li>
+    </ul>
+  </nav>
+
+  <article >
+    <h2 style="font-size: 30px;">Mes blocs</h2>
+    <h3 style="font-size: 20px;">Position relative vs absolue</h3>
+    <div class="relatif" style="  position: relative;background-color: red;width: 15em; height: 10em;">
+  <p class="absolue" style="  position: absolute; top: 1em; right: 1em; background-color: blue;">
+    je suis en position absolue
+  </p>
+</div>
+
+<h2 style="font-size: 20px;">Superposition </h2>
+
+            <div id="bloc1" style=" padding: 0 0 0 0; margin: 0 0 0 0;position: relative;width: 80px;height: 80px;background-color: green;top: 40px;left: 50px;z-index: 1;">Bloc 1</div>
+
+            <div id="bloc2" style="    padding: 0 0 0 0;margin: 0 0 0 0;position: relative;width: 80px;height: 80px;    background-color: violet;top: -50px;right: -150px;z-index: 3;">Bloc 2</div>
+
+            <div id="bloc3" style="  padding: 0 0 0 0;margin: 0 0 0 0;position: relative;width: 80px;height: 80px;background-color: pink;top: -150px;right: -110px;z-index:2 ">Bloc 3</div>
+
+
+  </article>
+</section>
+
+</div>
+
+
+<footer>
+  <p id="CopyRight">Copyright © 2018, El achhab Abdellah </p>
+</footer>
+
+</body>
+</html>

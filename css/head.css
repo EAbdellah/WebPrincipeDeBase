@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  font-size: 30px;
+}
+
+#contenu header #titre h1{
+  font-size: 55px;
+  
+
+}
+
+h2{
+  font-size: 25px;
+  display: block;
+}
+
+h6{
+  font-size: 0px;
+  display: block;
+}
+
+
+#contenu{
+    display: flex;
+    width: auto;
+
+}
+
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    word-wrap: break-word;
+    justify-content: space-between;
+    width: 200em;
+
+
+    
+}
+
+#titre{
+    display: inline-block;
+    width:50%;
+
+    
+}
+
+#connection{
+    display: inline-block;
+    padding: 20px;
+    width:600px;
+
+}
+form{
+  float: right;
+}
+
+
+ input[type=text] {
+  border: 1px solid #ccc;  
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  
+}
+
+input:focus {
+    background-color: #5F9EA0 ;
+}
+
+button {
+  display: inline-block;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color: #555;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+
+  
+}
+
+
+button:hover {
+  background-color: green;
+}
+
+
+
+
+section{
+     float: left;
+      width: 80%;
+      height: auto;
+      min-height: 500px
+
+}
+
+aside{
+    border: 2px solid black;
+    float: right;
+    padding: 20px;
+    width: 20%;
+    background-color: white;
+    height: 250px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+#aside2{
+    overflow: scroll;
+    
+}
+#conteneur {
+  height: auto; /* Par défaut. Prend la hauteur du contenu. */
+  border: 2px solid black;
+  display: block;
+}
+#conteneur:after {
+  content: ""; /* Important, sinon l'élément n'est pas généré. */
+  display: table;
+  clear: both;
+}
+
+
+a:before{
+  content:">"
+}
+a
+{
+text-decoration:none;
+} 
+
+a:link
+{
+  color:#666;
+}
+
+a:hover 
+{
+  color:black;
+}
+
+
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: auto;
+    min-height: 500px;
+    background: #ccc;
+    padding: 20px;
+     word-wrap: break-word;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: auto;
+    min-height: 500px
+}
+
+iframe
+{ 
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px #1c1a19;
+}
+
+/* Style du footer */
+footer {
+    background-color: #777;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+/* Responsive layout*/
+@media (max-width: 600px) {
+    nav, article, section, aside,header,iframe,h1,input[type=text],button, #connection, #contenu {
+        width: 100%;
+        height: auto;
+
+    }
+
+ 
+}

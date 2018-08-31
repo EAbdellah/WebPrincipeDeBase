@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mon fomulaire</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="../css/head.css">
+<link href="../css/style1.css" rel="alternate stylesheet" type="text/css" title="style1">
+<link href="../css/style2.css" rel="alternate stylesheet" type="text/css" title="style2">
+ <script src="../script/monscript.js"></script>
+</head>
+
+<body>
+
+
+<div id="contenu">
+<header>
+  <div id="titre">
+    <h1>Header</h1>
+  </div>
+
+  <div id="connection">
+    <form>
+      <input class="yo" type="text" name="login" placeholder="Login">
+      <input class="yo" type="text" name="password" placeholder="Mot de pass">
+      <button  class="ro" type="submit" name="button"  onclick="ma_fonction()" >Connection</button> 
+
+    </form>
+  </div>
+</header>
+</div>
+
+
+
+
+<div id="conteneur">
+
+<section style="width: 100%;">
+  <h6>up</h6>
+  <nav style="height: 700px;">
+    Navigation
+    <ul>
+      
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="insert.html">l'insert</a></li>
+      <li><a href="tableau.html">tableau</a></li>
+      <li><a href="formulaire.html">formulaire</a></li>
+      <li><a href="video.html">video</a></li>
+      <li><a href="bloc.html">les blocs</a></li>
+    </ul>
+  </nav>
+
+  <article style="height: 700px;" >
+     <h2 style="font-size: 30px;">Amazon Livraison</h2>
+
+      
+
+          <form method="post" action="#" onsubmit="return envoi()" style="display: flex;">
+
+
+            <fieldset>
+              <legend>Vos coordonnées</legend>  
+              <label for="nom">Nom</label>
+              <input type="text" name="nom" id="nom" /><br/>
+              <label for="prenom">Prénom</label>
+              <input type="text" name="prenom" id="prenom" /><br/>
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email"  style="margin-top: 6px;" /><br/>
+              <label for="num_tel"> Téléphone</label>
+              <input type="text" name="num_tel" id="num_tel" /><br/>
+              <label for="adr_livr">Adresse</label>
+              <input type="text" name="adr_livr" id="adr_livr" /><br/>
+<div style="margin-top: 10px;">
+  Residant Belge ?
+
+    
+      <SELECT name="nom" size="1">
+      <OPTION>oui</OPTION>
+      <OPTION>non </OPTION>
+      <OPTION>je sais plus</OPTION>
+      </SELECT>
+    
+</div>
+            </fieldset>
+            </form>
+
+            <form method="post" action="#" onsubmit="return envoi()" style="display: flex;">
+
+            <fieldset>
+              <legend>Votre Commande</legend>
+                <p>
+                  Moyen de livraison <br/>
+                  <input type="radio" name="service" value="service1" id="service1" /> <label for="service1">Velo</label><br/>
+                  <input type="radio" name="service" value="service2" id="service2" /> <label for="service2">Avion</label><br/>
+                  <input type="radio" name="service" value="service3" id="service3" /> <label for="service3">Voiture</label><br/>
+                  <input type="radio" name="service" value="service4" id="service4" /> <label for="service4">Bateau</label><br/>
+                </p>
+                <p>Ajouter a votre panier des choses inutiles<br />
+                  <input type="checkbox" name="frites" id="frites" /> <label for="frites">des écouteurs</label><br />
+                  <input type="checkbox" name="steak" id="steak" /> <label for="steak">un telephone</label><br />
+                  <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards">une voiture</label><br />
+                  <input type="checkbox" name="huitres" id="huitres" /> <label for="huitres">un rein</label><br/>
+                <br/>
+                <label for="huitres">Date de Livraison: </label><br/>
+                <input type="date" name="date" id="date"/>
+                </p>
+                  
+                <p>
+                  <label for="precisions">Commantaire:</label><br/>
+                  <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+                </p>
+                  <input type="submit" value="Envoyer la commande" id="envoi_commande"/><br/>
+                  <input type="reset" value="réinitialiser la commande" id="reset_commande"/><br/>
+              </fieldset>
+            </form>
+            
+    
+  </article>
+</section>
+
+</div>
+
+
+<footer>
+  <p id="CopyRight">Copyright © 2018, El achhab Abdellah </p>
+</footer>
+
+</body>
+</html>

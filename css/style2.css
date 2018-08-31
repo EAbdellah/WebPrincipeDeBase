@@ -1,0 +1,179 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Courier New, sans-serif;
+}
+
+h1{
+  font-size: 30px;
+}
+
+#contenu header #titre h1{
+  font-size: 55px;
+  
+
+}
+
+h2{
+  font-size: 25px;
+  display: block;
+}
+
+
+#contenu{
+    display: flex;
+    width: auto;
+
+}
+
+/* Style the header */
+header {
+    background-color: #8B008B;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  
+    justify-content: space-between;
+    width: 200em;
+
+
+    
+}
+
+#titre{
+    display: inline-block;
+    width:50%;
+
+    
+}
+
+#connection{
+    display: inline-block;
+    padding: 20px;
+    width:600px;
+
+}
+form{
+  float: right;
+}
+
+
+ input[type=text] {
+  border: 1px solid #ccc;  
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  
+}
+
+input:focus {
+    background-color: #5F9EA0 ;
+}
+
+button {
+  display: inline-block;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color: #555;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+
+  
+}
+
+
+button:hover {
+  background-color: green;
+}
+
+
+
+
+section{
+     float: left;
+      width: 80%;
+
+}
+
+aside{
+    border: 2px solid black;
+    float: right;
+    padding: 20px;
+    width: 20%;
+    background-color: #FFFFE0;
+    height: 250px;
+    word-wrap: break-word;
+}
+
+#aside2{
+    overflow: scroll;
+    
+}
+#conteneur {
+  height: auto; /* Par défaut. Prend la hauteur du contenu. */
+  border: 2px solid black;
+  display: block;
+}
+#conteneur:after {
+  content: ""; /* Important, sinon l'élément n'est pas généré. */
+  display: table;
+  clear: both;
+}
+
+
+a:before{
+  content:">"
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 500px; /* only for demonstration, should be removed */
+    background: #FF69B4;
+    padding: 20px;
+     word-wrap: break-word;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #FFB6C1;
+    height: 500px; 
+}
+
+
+
+/* Style the footer */
+footer {
+    background-color: #8B008B;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article, section, aside,header,h1,input[type=text],button, #connection, #contenu {
+        width: 100%;
+        height: auto;
+
+    }
+
+ 
+}

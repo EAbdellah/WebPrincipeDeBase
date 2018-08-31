@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mon Tableau</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="../css/head.css">
+
+ <script  src="../script/monscript.js"></script>
+ <style>
+   table, td, th{
+    border:  solid 2px black;
+
+   }
+
+ </style>
+</head>
+
+<body>
+
+
+<div id="contenu">
+<header>
+  <div id="titre">
+    <h1>Header</h1>
+  </div>
+
+  <div id="connection">
+    <form>
+      <input class="yo" type="text" name="login" placeholder="Login">
+      <input class="yo" type="text" name="password" placeholder="Mot de pass">
+      <button  class="ro" type="submit" name="button"  onclick="ma_fonction()" >Connection</button> 
+
+    </form>
+  </div>
+</header>
+</div>
+
+
+
+
+<div id="conteneur">
+
+<section style="width: 100%;">
+    <h6>up</h6>
+  <nav >
+    Navigation
+    <ul>
+      
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="insert.html">l'insert</a></li>
+      <li><a href="tableau.html">tableau</a></li>
+      <li><a href="formulaire.html">formulaire</a></li>
+      <li><a href="video.html">video</a></li>
+      <li><a href="bloc.html">les blocs</a></li>
+    </ul>
+  </nav>
+
+  <article  >
+     <h2 id="titre_article">Tableau</h2>
+            <table id="tab_tarifs">
+              <tr>
+                <th>Cellule </th>
+                <td>Cellule</td>
+              </tr>
+              <tr>
+                <th>Cellule</th>
+                <td>Cellule</td>
+              </tr>
+              <tr>
+                <th>Cellule</th>
+                <td>Cellule</td>
+              </tr>
+              <tr>
+                <th>Cellule</th>
+                <td rowspan="2">Fusion</td>
+              </tr>
+              <tr>
+                <th>Cellule</th>
+              </tr>
+            </table>
+    
+  </article>
+</section>
+
+</div>
+
+
+<footer>
+  <p id="CopyRight">Copyright © 2018, El achhab Abdellah </p>
+</footer>
+
+</body>
+</html>
